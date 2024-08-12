@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<HEAd>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .recipe_small{
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #007bff;
+            border-radius: 6px;
+            height: 75px;
+            width: 200px;
+        }
+        .recipe_large{
+            padding: 10px;
+            font-size: 16px;
+            border: 2px black;
+            border-radius: 6px;
+            height: 300px;
+            width: 200px;
+        }
+    </style>
+</HEAd>
+
+
+<body>
+    <h2>Input Recipe information:</h2>
+        <fieldset>
+            <form action="/recipe" method="post">
+                <label for="recipe_name">Recipe Name:</label>
+                <input type="text" name="recipe_name" class="recipe_small" placeholder="Enter here..." required>
+
+                <label for="recipe_ingredients">Recipe Ingredients:</label>
+                <input type="text" name="recipe_ingredients" class="recipe_large" placeholder="Enter here..." required>
+
+                <label for="recipe_ingredients">Recipe Directions:</label>
+                <input type="text" name="recipe_directions" class="recipe_large" placeholder="Enter here..." required>
+            </form>
+        </fieldset>
+</body>
